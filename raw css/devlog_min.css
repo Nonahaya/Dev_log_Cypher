@@ -1,0 +1,41 @@
+.devlog_min_comsole {
+  text-align: left;
+  scroll-behavior:smooth;
+
+    overflow-y: scroll;
+  background-color: darkslategray;
+  width: 500px;
+  height: 200px;
+  font-size: 10px;
+}
+.devlog_min_comsole .c_success {
+  color: forestgreen;
+}
+.devlog_min_comsole .c_log{
+    color: honeydew;
+}
+.devlog_min_comsole .c_waring{
+    color:lightsalmon;
+}
+.devlog_min_comsole .c_input{
+    color:mediumblue;
+
+}
+.command_submit {
+    width:50;
+    
+}
+.submit_icon{
+  font-size: 10px;
+    background-image:url("http://cdn.onlinewebfonts.com/svg/download_307755.svg");
+}
+.command_input {
+width: 450px;
+background-color: darkslategray;
+color:whitesmoke;
+font-size: 10px;
+}
+.devlog_min_comsole .c_err{
+    color:maroon;
+}
+
