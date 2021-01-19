@@ -14,7 +14,7 @@
 .devlog_min_comsole .c_log{
     color: honeydew;
 }
-.devlog_min_comsole .c_waring{
+.devlog_min_comsole .c_warning{
     color:lightsalmon;
 }
 .devlog_min_comsole .c_input{
@@ -36,6 +36,6 @@ color:whitesmoke;
 font-size: 10px;
 }
 .devlog_min_comsole .c_err{
-    color:maroon;
+    color:red;
 }
 

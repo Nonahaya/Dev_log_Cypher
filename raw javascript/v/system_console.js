@@ -1,3 +1,13 @@
+var devlog = {
+    log: plog,
+    err: perr,
+    input: pinput,
+    warning:pwarning,
+    success: psuccess,
+    scrolltotop: a_scoll_h,
+    scrolltobottom: a_scoll_b,
+
+}
 function plog(...arr) {
 
     let dev_print = document.createElement("p");
@@ -6,15 +16,7 @@ function plog(...arr) {
     document.getElementById(_m_console_as).appendChild(dev_print);
     a_scoll_b();
 }
-var devlog = {
-    log: plog,
-    err: perr,
-    input: pinput,
-    success: psuccess,
-    scrolltotop: a_scoll_h,
-    scrolltobottom: a_scoll_b,
 
-}
 function pinput(...arr) {
     let dev_print = document.createElement("p");
     dev_print.className = "c_input";
@@ -30,6 +32,7 @@ function psuccess(...arr) {
     document.getElementById(_m_console_as).appendChild(load_suss);
     a_scoll_b();
 }
+
 function perr(...arr) {
 
     let load_suss = document.createElement("p");
@@ -41,6 +44,16 @@ function perr(...arr) {
     a_scoll_b();
 }
 
+function pwarning (...arr) {
+
+    let load_suss = document.createElement("p");
+    load_suss.className = "c_warning";
+    load_suss.innerHTML = '<img src="asset/Warning.png" width="10px" height="10px"></img>&nbsp;' + arr.join("");
+  
+   document.getElementById(_m_console_as).appendChild(load_suss);
+
+    a_scoll_b();
+}
 var a_scoll_b = () => {
     let mcon = document.getElementById(_m_console_as);
     mcon.scrollTop = mcon.scrollHeight - mcon.clientHeight;
